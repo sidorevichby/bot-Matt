@@ -1,7 +1,4 @@
-var token = "5198418372:AAGXPJTVyeaW8mOligKKXvXyH7qxADgjR7Q";
-var telegramUrl = "https://api.telegram.org/bot" + token;
-var webAppUrl = "https://script.google.com/macros/s/AKfycbyjZaBpXiiN-vVRriqVpwXS9rpTHbgLWMH_E_oP0Q/exec";
-var loginTb = "@floppi1_bot";
+
 
 //=========================================================================================================================================//
 
