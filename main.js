@@ -21,7 +21,7 @@ function doPost(e) {
   } else {
     var message = contents.message;
     var text = contents.message.text;
-    if(message.chat.type != "private" && !text.toString().includes(loginTb)){
+    if(message.chat.type != "private" && !text.toString().includes(LOGINTB)){
     return;
     }
   }
@@ -72,7 +72,7 @@ function sendMessage(id, text) {
       reply_markup: buttons
     }    
   };
-  UrlFetchApp.fetch('https://api.telegram.org/bot' + token + '/', data);
+  UrlFetchApp.fetch('https://api.telegram.org/bot' + TOKEN + '/', data);
 }
 
 
@@ -80,10 +80,10 @@ function sendMessage(id, text) {
 
 function separateCommand(str){
     var command = str.substr(str.indexOf('/'));
-    if(command.includes(' ') || command.includes(loginTb))
+    if(command.includes(' ') || command.includes(LOGINTB))
     {
       command = command.split(' ')[0];
-      command = command.split(loginTb)[0];
+      command = command.split(LOGINTB)[0];
     }
     return command;
 }
